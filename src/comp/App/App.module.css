@@ -1,3 +1,11 @@
-.local {
+.root {
     display: flex;
+    flex-direction: column;
+
+    /* Centres content vertically regardless of vertical screen size */
+    min-height: 100vh;
+    justify-content: center;
+
+    /* Centres content horizontally */
+    align-items: center;
 }

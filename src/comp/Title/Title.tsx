@@ -1,5 +1,5 @@
 import React from "react";
-import './Title.module.css';
+import styles from './Title.module.css';
 
 type AppProps = {
     name: string;
@@ -8,8 +8,8 @@ type AppProps = {
 const Title = ({name, desc}: AppProps): React.ReactElement => {
     return (
         <>
-            <div className="name">{name}</div>
-            <div className="desc">{desc}</div>
+            <div className={styles.name}>{name}</div>
+            <div className={styles.desc}>{desc}</div>
         </>
     );
 }

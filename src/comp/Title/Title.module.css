@@ -1,9 +1,10 @@
 .name {
-    font-family: "Inter Semi Bold", sans-serif;
-    font-size: 15rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 12rem;
+    font-weight: normal;
 }
 
 .desc {
-    font-family: "Inter", sans-serif;
-    font-size: medium;
+    font-family: "Roboto", sans-serif;
+    font-size: 5.5rem;
 }
