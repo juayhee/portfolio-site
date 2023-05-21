@@ -12,7 +12,12 @@ const App = (): React.ReactElement => {
                 <Title name="Tan Juay Hee"
                        desc="aspiring game developer, storyteller, artist"/>
             </div>
-            <div><Header one="1" two="two"/></div>
+            <div><Header Home="#"
+                         About="#"
+                         Experience="#"
+                         Works="#"
+                         Contact="#"/>
+            </div>
         </>
     );
 };

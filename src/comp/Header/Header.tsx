@@ -12,7 +12,7 @@ const Header = (props: HeaderProps): React.ReactElement => {
     const rows = [];
 
     for (let i = 0; i < length; i++) {
-        rows.push(<a href={labels[i]}>{urls[i]}</a>);
+        rows.push(<a href={urls[i]}>{labels[i]}</a>);
     }
 
     return (
