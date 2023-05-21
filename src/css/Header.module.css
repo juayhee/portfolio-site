@@ -1,0 +1,24 @@
+a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5em;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #f5f4f0;
+}
+
+.headerRoot {
+  /* Alignment */
+  display: flex;
+  justify-content: end;
+  gap: 5em;
+  padding: 2em 5em 2em 2em;
+
+  /* Colour */
+  background-color: black;
+  opacity: 40%;
+}

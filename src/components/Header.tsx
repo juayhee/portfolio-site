@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Header.module.css";
+import styles from "../css/Header.module.css";
 
 type HeaderProps = {
   [label: string]: string;
@@ -12,13 +12,14 @@ const Header = (props: HeaderProps): React.ReactElement => {
   const rows = [];
 
   for (let i = 0; i < length; i++) {
+    // Labels will always be unique so just use as keys as well for convenience
     rows.push(
-      <a className={styles.a} href={urls[i]}>
+      <a key={labels[i]} className={styles.a} href={urls[i]}>
         {labels[i]}
       </a>
     );
   }
 
-  return <>{rows}</>;
+  return <div className={styles.headerRoot}>{rows}</div>;
 };
 export default Header;
