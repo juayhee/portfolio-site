@@ -1,3 +1,16 @@
+/* Alignment of all header links */
+.headerRoot {
+  display: flex;
+  justify-content: end;
+  gap: 5em;
+  padding: 2em 5em 2em 2em;
+}
+
+.container {
+  position: relative; /* Provide relative parent for absolute child */
+  display: flex;
+}
+
 a,
 a:visited {
   text-decoration: none;
@@ -27,8 +40,9 @@ a {
   opacity: 0;
 }
 
-/* Transition declarations */
+/* TRANSITION DECLARATIONS */
 
+/* Transition for text in <a> */
 a:hover {
   transition: all 0.3s ease-out;
 
@@ -36,6 +50,7 @@ a:hover {
   color: #fdfffc;
 }
 
+/* Transition for background of <a> */
 a:hover + .background {
   transition: all 0.1s ease-out;
 
@@ -45,24 +60,11 @@ a:hover + .background {
   opacity: 1;
 }
 
-/* End of transition declaration */
+/* END OF TRANSITION DECLARATIONS */
 
 .absoluteCentre {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
-.container {
-  position: relative;
-  display: flex;
-}
-
-.headerRoot {
-  /* Alignment */
-  display: flex;
-  justify-content: end;
-  gap: 5em;
-  padding: 2em 5em 2em 2em;
 }
