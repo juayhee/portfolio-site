@@ -14,9 +14,12 @@ const Header = (props: HeaderProps): React.ReactElement => {
   for (let i = 0; i < length; i++) {
     // Labels will always be unique so just use as keys as well for convenience
     rows.push(
-      <a key={labels[i]} className={styles.a} href={urls[i]}>
-        {labels[i]}
-      </a>
+      <div className={styles.container}>
+        <a key={labels[i]} className={styles.a} href={urls[i]}>
+          {labels[i]}
+        </a>
+        <div className={`${styles.background} ${styles.absoluteCentre}`}></div>
+      </div>
     );
   }
 

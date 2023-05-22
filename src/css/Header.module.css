@@ -1,14 +1,62 @@
+a,
+a:visited {
+  text-decoration: none;
+  color: #020100;
+}
+
 a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 2em;
+  padding: 8px 13px 8px 13px;
+  border-radius: 10px;
+  z-index: 1;
+
+  /* Transition properties */
+  color: #020100;
 }
 
-a,
-a:hover,
-a:visited {
-  text-decoration: none;
-  color: #020100;
+.background {
+  background-color: #ff715b;
+  z-index: 0; /* Background sits behind link */
+  border-radius: 10px;
+
+  /* Transition properties */
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+/* Transition declarations */
+
+a:hover {
+  transition: all 0.3s ease-out;
+
+  /* Transition properties */
+  color: #fdfffc;
+}
+
+a:hover + .background {
+  transition: all 0.1s ease-out;
+
+  /* Transition properties */
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+
+/* End of transition declaration */
+
+.absoluteCentre {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  position: relative;
+  display: flex;
 }
 
 .headerRoot {
