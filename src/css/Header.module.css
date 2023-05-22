@@ -21,8 +21,7 @@ a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 2em;
-  padding: 8px 13px 8px 13px;
-  border-radius: 10px;
+  padding: 9px 13px 8px 13px;
   z-index: 1;
 
   /* Transition properties */
@@ -31,8 +30,8 @@ a {
 
 .background {
   background-color: #ff715b;
+  border-radius: 7px;
   z-index: 0; /* Background sits behind link */
-  border-radius: 10px;
 
   /* Transition properties */
   height: 0;
