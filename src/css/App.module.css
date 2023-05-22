@@ -17,3 +17,11 @@
 
   background-color: #fdfffc;
 }
+
+.icon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+}
