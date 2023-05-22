@@ -1,7 +1,8 @@
 import React from "react";
+import styles from "../css/Icon.module.css";
 import personalIcon from "../resources/icon/icon.svg";
 
-const Icon = (): React.Element => {
+const Icon = (): React.ReactElement => {
   return (
     <>
       {/* This makes the SVG always scale to match the size of its parent*/}

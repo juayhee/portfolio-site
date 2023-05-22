@@ -20,8 +20,8 @@
 
 .icon {
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 30px;
-  width: 30px;
+  top: 20px;
+  left: 50px;
+  height: 110px;
+  width: 110px;
 }
