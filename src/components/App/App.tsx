@@ -6,7 +6,7 @@ import styles from "./App.module.sass";
 const App = (): React.ReactElement => {
   return (
     <>
-      <Title />
+      <Header />
     </>
   );
 };
