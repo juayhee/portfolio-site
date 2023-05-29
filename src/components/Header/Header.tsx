@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Header.module.sass";
-import personalLogo from "../../resources/icon/icon.svg";
+import linkedInLogo from "../../resources/linkedin.svg";
+import githubLogo from "../../resources/github.svg";
 
 type MenuItems = {
   /* Variable number of page labels and their corresponding URLS */
@@ -30,9 +31,19 @@ function Header(props: MenuItems): React.ReactElement {
   return (
     <>
       <div className={styles.headerContainer}>
-        <img src={personalLogo} alt="Icon" />
         <div className={styles.links}>{headerArray}</div>
         <div className={styles.space}></div>
+
+        <a
+          href="https://www.linkedin.com/in/juayhee/"
+          className={styles.linkedInLink}
+        >
+          <img src={linkedInLogo} alt="LinkedIn" />
+        </a>
+
+        <a href="https://github.com/juayhee" className={styles.githubLink}>
+          <img src={githubLogo} alt="Github" />
+        </a>
       </div>
     </>
   );
