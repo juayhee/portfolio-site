@@ -4,8 +4,8 @@ import styles from "./Content.module.sass";
 function Content(): React.ReactElement {
   return (
     <>
-      <div className={styles.box}>
-        <div className={styles.contentContainer}>
+      <div className={styles.contentGrid}>
+        <div className={styles.content}>
           <h1>Content title</h1>
           <h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
