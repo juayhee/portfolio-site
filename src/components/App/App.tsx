@@ -13,7 +13,10 @@ const headerProps = {
 const App = (): React.ReactElement => {
   return (
     <>
-      <Header {...headerProps} />
+      <div className={styles.headerContainer}>
+        <Header {...headerProps} />
+      </div>
+      <div className={styles.titleContainer}><Title/></div>
     </>
   );
 };
