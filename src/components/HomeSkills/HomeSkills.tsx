@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./SkillsHome.module.sass";
+import styles from "./HomeSkills.module.sass";
 
 type BubbleProps = {
   title: string;
@@ -23,7 +23,14 @@ const backEnd: BubbleProps = {
 const more: BubbleProps = {
   title: "...and more",
   className: "more",
-  skillsList: ["Video editing", "Photo editing", "Storyboarding", "Music"],
+  skillsList: [
+    "Video editing",
+    "Photo editing",
+    "Storyboarding",
+    "Music",
+    "aa",
+    "b",
+  ],
 };
 
 // End of content
@@ -46,7 +53,7 @@ function Bubble(props: BubbleProps): React.ReactElement {
   );
 }
 
-function SkillsHome(): React.ReactElement {
+function HomeSkills(): React.ReactElement {
   return (
     <>
       <div className={styles.bubblesGrid}>
@@ -58,4 +65,4 @@ function SkillsHome(): React.ReactElement {
   );
 }
 
-export default SkillsHome;
+export default HomeSkills;

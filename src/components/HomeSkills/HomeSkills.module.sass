@@ -33,8 +33,9 @@ li
 
 .bubblesGrid
   display: grid
-  height: 100vh
-  width: 100vw
+  height: 100%
+  // Grid is only as large as parent in <App> allows
+  width: 100%
   grid-template-rows: 192px repeat(3, minmax(0, 1fr)) 192px
   grid-template-columns: 192px repeat(3, minmax(0, 1fr)) 192px
   justify-items: center
