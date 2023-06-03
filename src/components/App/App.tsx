@@ -3,6 +3,7 @@ import Title from "../Title/Title.tsx";
 import Header from "../Header/Header.tsx";
 import styles from "./App.module.sass";
 import Content from "../Content/Content.tsx";
+import HomeSkills from "../HomeSkills/HomeSkills.tsx";
 
 const headerProps = {
   Home: "#",
@@ -19,10 +20,16 @@ const App = (): React.ReactElement => {
       </div>
 
       <div className={styles.titleContainer}>
-        <Title/>
+        <Title />
       </div>
 
-      <div className={styles.contentContainer}><Content/></div>
+      <div className={styles.contentContainer}>
+        <Content />
+      </div>
+
+      <div className={styles.skillsContainer}>
+        <HomeSkills />
+      </div>
     </>
   );
 };
