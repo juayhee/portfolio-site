@@ -7,7 +7,7 @@ import MainSkills from "../MainSkills/MainSkills.tsx";
 import Contact from "../Contact/Contact.tsx";
 
 const headerProps = {
-  Home: "#",
+Home: "#",
   About: "#",
   Skills: "#",
   Works: "#",
@@ -24,7 +24,7 @@ const App = (): React.ReactElement => {
       </div>
       <div className={styles.contentContainer}>
         <Content />
-      </div>
+    </div>
       <div className={styles.contentSkillsSpacing} />
       <div className={styles.skillsContainer}>
         <MainSkills />
