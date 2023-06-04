@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./HomeSkills.module.sass";
+import styles from "./MainSkills.module.sass";
 
 type BubbleProps = {
   title: string;
@@ -46,7 +46,7 @@ function Bubble(props: BubbleProps): React.ReactElement {
   );
 }
 
-function HomeSkills(): React.ReactElement {
+function MainSkills(): React.ReactElement {
   return (
     <>
       <div className={styles.bubblesContainer}>
@@ -58,4 +58,4 @@ function HomeSkills(): React.ReactElement {
   );
 }
 
-export default HomeSkills;
+export default MainSkills;

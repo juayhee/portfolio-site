@@ -3,7 +3,7 @@ import Title from "../Title/Title.tsx";
 import Header from "../Header/Header.tsx";
 import styles from "./App.module.sass";
 import Content from "../Content/Content.tsx";
-import HomeSkills from "../HomeSkills/HomeSkills.tsx";
+import MainSkills from "../MainSkills/MainSkills.tsx";
 import Contact from "../Contact/Contact.tsx";
 
 const headerProps = {
@@ -27,9 +27,9 @@ const App = (): React.ReactElement => {
       </div>
       <div className={styles.contentSkillsSpacing} />
       <div className={styles.skillsContainer}>
-        <HomeSkills />
+        <MainSkills />
       </div>
-      <div className={styles.homeSkillsContactSpacing} />
+      <div className={styles.mainSkillsContactSpacing} />
       <div className={styles.contactContainer}>
         <Contact />
       </div>
