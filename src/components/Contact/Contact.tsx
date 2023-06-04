@@ -4,8 +4,8 @@ import styles from "./Contact.module.sass";
 function Contact(): React.ReactElement {
   return (
     <>
-      <div className={styles.wrapper}>
-        <h1>Get in touch</h1>
+      <div className={styles.contactContainer}>
+        <h1 className={styles.h1}>Get in touch</h1>
         <form className={styles.contactForm}>
           <div className={styles.nameAndEmailContainer}>
             <div className={styles.email}>

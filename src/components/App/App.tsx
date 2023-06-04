@@ -4,6 +4,7 @@ import Header from "../Header/Header.tsx";
 import styles from "./App.module.sass";
 import Content from "../Content/Content.tsx";
 import HomeSkills from "../HomeSkills/HomeSkills.tsx";
+import Contact from "../Contact/Contact.tsx";
 
 const headerProps = {
   Home: "#",
@@ -29,6 +30,10 @@ const App = (): React.ReactElement => {
 
       <div className={styles.skillsContainer}>
         <HomeSkills />
+      </div>
+
+      <div className={styles.contactContainer}>
+        <Contact />
       </div>
     </>
   );

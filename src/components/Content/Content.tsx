@@ -6,7 +6,7 @@ function Content(): React.ReactElement {
     <>
       <div className={styles.contentGrid}>
         <div className={styles.content}>
-          <h1>Content title</h1>
+          <h1 className={styles.h1}>Content title</h1>
           <h2>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
