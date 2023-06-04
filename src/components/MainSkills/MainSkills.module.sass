@@ -14,13 +14,19 @@ li
 
 .bubbleTitle
   font-family: "Source Sans 3", sans-serif
-  font-size: 16px
+  font-size: 18px
   font-weight: normal
 
+// SVG + Skill
 .bubbleContent
   font-family: Krub, sans-serif
   font-weight: 600
   font-size: 20px
+
+.bubbleContent > ul > li
+  display: flex // Align icons and skill text side by side
+  align-items: flex-end
+  gap: 12px
 
 // Contains .bubbleContent and .bubbleTitle, also defines background
 .bubbleContainer
@@ -36,7 +42,7 @@ li
   display: flex
   gap: 128px
   justify-content: center
-  min-height: 80vh // Controls height of column within which bubble is allowed to align itself
+  min-height: 80vh // Controls height of column in which bubbles are allowed to align themselves
 
 // Vertical alignment of bubbles within their parent flex containers
 .frontEnd
