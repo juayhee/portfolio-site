@@ -19,21 +19,17 @@ const App = (): React.ReactElement => {
       <div className={styles.headerContainer}>
         <Header {...headerProps} />
       </div>
-
       <div className={styles.titleContainer}>
         <Title />
       </div>
-
       <div className={styles.contentContainer}>
         <Content />
       </div>
-
       <div className={styles.contentSkillsSpacing} />
-
       <div className={styles.skillsContainer}>
         <HomeSkills />
       </div>
-
+      <div className={styles.homeSkillsContactSpacing} />
       <div className={styles.contactContainer}>
         <Contact />
       </div>
