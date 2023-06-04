@@ -28,6 +28,8 @@ const App = (): React.ReactElement => {
         <Content />
       </div>
 
+      <div className={styles.contentSkillsSpacing} />
+
       <div className={styles.skillsContainer}>
         <HomeSkills />
       </div>
