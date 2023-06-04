@@ -1,0 +1,67 @@
+.contactForm
+  display: flex
+  flex-direction: column
+  width: max-content
+  gap: 24px
+  padding: 32px 64px 48px 48px
+  background: #d04949
+  border-radius: 12px
+  
+
+.nameAndEmailContainer
+  display: flex
+
+.space
+  display: flex
+  flex-grow: 1
+
+input, textarea
+  box-sizing: border-box
+  border-radius: 12px
+  border: 1px solid white
+
+.email input, .name input, textarea
+  // Padding before input to prevent it from clipping rounded edge of input box
+  padding-left: 16px
+
+  // Input font
+  font-family: "Krub", sans-serif
+  font-size: 16px
+
+
+.email input
+  width: 300px
+  height: 48px
+  margin: 0
+
+
+.name input
+  width: 192px
+  height: 48px
+  margin: 0
+
+
+textarea
+  resize: none
+  width: 512px
+  height: 256px
+  padding-top: 12px
+  box-sizing: border-box
+
+h1
+  padding-left: 16px
+  margin: 0
+  font-family: "Source Sans 3", sans-serif
+  font-size: 24px
+  font-weight: 500
+  color: #343f4c
+
+input:focus, textarea:focus
+  outline: none
+
+  // Transition settings
+  border: 1px solid black
+  transition: border 0.3s
+
+
+
