@@ -28,8 +28,6 @@ const more: BubbleProps = {
     "Photo editing",
     "Storyboarding",
     "Music",
-    "aa",
-    "b",
   ],
 };
 

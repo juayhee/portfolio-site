@@ -14,12 +14,10 @@ li
   font-size: 16px
   font-weight: normal
 
-
 .bubbleContent
   font-family: Krub, sans-serif
   font-weight: 600
   font-size: 20px
-
 
 .bubbleContainer
   width: max-content
@@ -29,28 +27,10 @@ li
   gap: 24px
   padding: 32px 24px 32px 24px
   border-radius: 32px
-  align-items: start
+  align-self: flex-start
 
-.bubblesGrid
-  display: grid
-  height: 100%
-  // Grid is only as large as parent in <App> allows
-  width: 100%
-  grid-template-rows: 192px repeat(3, minmax(0, 1fr)) 192px
-  grid-template-columns: 192px repeat(3, ) 192px
-  align-items: center
-
-.frontEnd
-  grid-row: 3/4
-  grid-column: 2/3
-
-
-.backEnd
-  grid-row: 2/3
-  grid-column: 3/4
-
-
-.more
-  grid-row: 4/5
-  grid-column: 4/5
-
+.bubblesContainer
+  display: flex
+  gap: 96px
+  justify-content: center
+  flex-basis: 100% // Flex container is as tall as parent in <App> allows
