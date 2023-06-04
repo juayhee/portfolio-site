@@ -23,14 +23,7 @@ const backEnd: BubbleProps = {
 const more: BubbleProps = {
   title: "...and more",
   className: "more",
-  skillsList: [
-    "Video editing",
-    "Photo editing",
-    "Storyboarding",
-    "Music",
-    "aa",
-    "b",
-  ],
+  skillsList: ["Video editing", "Photo editing", "Storyboarding", "Music"],
 };
 
 // End of content
@@ -56,7 +49,7 @@ function Bubble(props: BubbleProps): React.ReactElement {
 function HomeSkills(): React.ReactElement {
   return (
     <>
-      <div className={styles.bubblesGrid}>
+      <div className={styles.bubblesContainer}>
         <Bubble {...frontEnd} />
         <Bubble {...backEnd} />
         <Bubble {...more} />
