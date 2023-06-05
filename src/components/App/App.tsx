@@ -1,13 +1,13 @@
 import React from "react";
-import Title from "../Title/Title.tsx";
-import Header from "../Header/Header.tsx";
+import Title from "../Title/Title.js";
+import Header from "../Header/Header.js";
 import styles from "./App.module.sass";
-import Content from "../Content/Content.tsx";
-import MainSkills from "../MainSkills/MainSkills.tsx";
-import Contact from "../Contact/Contact.tsx";
+import Content from "../Content/Content.js";
+import MainSkills from "../MainSkills/MainSkills.js";
+import Contact from "../Contact/Contact.js";
 
 const headerProps = {
-Home: "#",
+  Home: "#",
   About: "#",
   Skills: "#",
   Works: "#",
@@ -24,7 +24,7 @@ const App = (): React.ReactElement => {
       </div>
       <div className={styles.contentContainer}>
         <Content />
-    </div>
+      </div>
       <div className={styles.contentSkillsSpacing} />
       <div className={styles.skillsContainer}>
         <MainSkills />
