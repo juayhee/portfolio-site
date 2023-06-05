@@ -2,20 +2,20 @@ import React from "react";
 import styles from "./MainSkills.module.sass";
 
 // Frontend logo imports
-import javaScriptLogo from "../../assets/MainSkills_icons/javascript.svg";
-import typeScriptLogo from "../../assets/MainSkills_icons/typescript.svg";
-import cssLogo from "../../assets/MainSkills_icons/css.svg";
-import htmlLogo from "../../assets/MainSkills_icons/html.svg";
+import javaScriptLogo from "../../resources/MainSkills_icons/javascript.svg";
+import typeScriptLogo from "../../resources/MainSkills_icons/typescript.svg";
+import cssLogo from "../../resources/MainSkills_icons/css.svg";
+import htmlLogo from "../../resources/MainSkills_icons/html.svg";
 
 // Backend logo imports
-import pythonLogo from "../../assets/MainSkills_icons/python.svg";
-import javaLogo from "../../assets/MainSkills_icons/java.svg";
-import cppLogo from "../../assets/MainSkills_icons/cpp.svg";
+import pythonLogo from "../../resources/MainSkills_icons/python.svg";
+import javaLogo from "../../resources/MainSkills_icons/java.svg";
+import cppLogo from "../../resources/MainSkills_icons/cpp.svg";
 
 // More logo imports
-import musicLogo from "../../assets/MainSkills_icons/music.svg";
-import photoshopLogo from "../../assets/MainSkills_icons/photoshop.svg";
-import premiereLogo from "../../assets/MainSkills_icons/premiere_pro.svg";
+import musicLogo from "../../resources/MainSkills_icons/music.svg";
+import photoshopLogo from "../../resources/MainSkills_icons/photoshop.svg";
+import premiereLogo from "../../resources/MainSkills_icons/premiere_pro.svg";
 
 type BubbleProps = {
   title: string;
