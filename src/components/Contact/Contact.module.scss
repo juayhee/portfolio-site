@@ -76,3 +76,9 @@ input:focus, textarea:focus {
 .space {
   flex-grow: 1;
 }
+
+.buttonContainer {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
