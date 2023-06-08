@@ -14,7 +14,6 @@ const buttonVariantsRed = {
   tap: {
     boxShadow: "0px -2px 1px #5f7081",
     backgroundColor: "#d04949",
-    scale: 0.97,
     transformOrigin: "center center",
   },
 };
@@ -30,7 +29,6 @@ const buttonVariantsLight = {
   tap: {
     boxShadow: "0px -2px 1px #821717", // Inner shadow setting
     backgroundColor: "#f7f7f8",
-    scale: 0.99,
     transformOrigin: "center center",
   },
 };
