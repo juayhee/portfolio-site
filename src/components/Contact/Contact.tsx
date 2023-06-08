@@ -28,13 +28,16 @@ function Contact(): React.ReactElement {
               />
             </div>
           </div>
-          <div className={styles.textArea}>
+          <div className={styles.textAreaContainer}>
             <label htmlFor="message" />
             <textarea
               name="message"
               id="message"
               placeholder="Feel free to message me about anything"
             />
+            <button type="submit" className={styles.submitButton}>
+              Submit
+            </button>
           </div>
         </form>
       </div>

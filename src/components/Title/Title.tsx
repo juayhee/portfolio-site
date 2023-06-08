@@ -7,7 +7,7 @@ function Title(): React.ReactElement {
       <div className={styles.titleContainer}>
         <div className={styles.name}>Tan Juay Hee</div>
         <div className={styles.description}>
-          aspiring game developer, storyteller, artist
+          aspiring game developer and storyteller
         </div>
       </div>
     </>
