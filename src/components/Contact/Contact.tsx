@@ -36,9 +36,12 @@ function Contact(): React.ReactElement {
               id="message"
               placeholder="Feel free to message me about anything"
             />
-            <div className={styles.buttonContainer}>
-              <Button buttonText="Submit" buttonType="submit" />
-            </div>
+            <Button
+              buttonText="Submit"
+              buttonStyle={styles.buttonStyle}
+              buttonColorType="red"
+              buttonType="submit"
+            />
           </div>
         </form>
       </div>
