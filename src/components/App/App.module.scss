@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.headerContainer {
+  position: absolute;
+  width: 100vw;
+}
+
+.titleContainer {
+  align-items: center;
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.contentContainer {
+  height: 100vh;
+}
+
+.skillsContainer {
+  height: 100vh;
+  width: 100vw;
+}
+
+.contactContainer { // Size of contact section
+  align-items: center;
+  background-color: #343f4c;
+  display: flex;
+
+  // Centre component
+  justify-content: center;
+  padding-bottom: 128px;
+  padding-top: 64px;
+}
+
+.contentSkillsSpacing {
+  border: 1px solid black;
+  height: 40vh;
+}
+
+.mainSkillsContactSpacing {
+  border: 1px solid black;
+  height: 40vh;
+}
