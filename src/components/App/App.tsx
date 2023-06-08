@@ -2,9 +2,9 @@ import React from "react";
 import Title from "../Title/Title.js";
 import Header from "../Header/Header.js";
 import styles from "./App.module.scss";
-import Content from "../Content/Content.js";
 import MainSkills from "../MainSkills/MainSkills.js";
 import Contact from "../Contact/Contact.js";
+import MainContent from "../MainContent/MainContent.tsx";
 
 const headerProps = {
   Home: "#",
@@ -23,7 +23,7 @@ const App = (): React.ReactElement => {
         <Title />
       </div>
       <div className={styles.contentContainer}>
-        <Content />
+        <MainContent />
       </div>
       <div className={styles.contentSkillsSpacing} />
       <div className={styles.skillsContainer}>

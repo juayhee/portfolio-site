@@ -5,14 +5,14 @@ import React from "react";
 // framer-motion variants
 const buttonVariantsRed = {
   initial: {
-    boxShadow: "1px 2px 2px rgba(0, 0, 0, 0.3)",
+    boxShadow: "0px 2px 3px rgba(0, 0, 0, 0.3)",
     backgroundColor: "#f45858",
   },
   hover: {
     backgroundColor: "#ef6767",
   },
   tap: {
-    boxShadow: "inset 0px -2px 3px #f45858",
+    boxShadow: "0px -2px 1px #5f7081",
     backgroundColor: "#d04949",
     scale: 0.97,
     transformOrigin: "center center",
@@ -21,16 +21,16 @@ const buttonVariantsRed = {
 
 const buttonVariantsLight = {
   initial: {
-    boxShadow: "1px 2px 2px rgba(0, 0, 0, 0.3)",
-    backgroundColor: "#ffffff",
+    boxShadow: "0px 2px 3px rgba(0, 0, 0, 0.3)",
+    backgroundColor: "#f7f8f8",
   },
   hover: {
     backgroundColor: "#ffffff",
   },
   tap: {
-    boxShadow: "inset 0px -2px 3px #f45858",
-    backgroundColor: "#ffffff",
-    scale: 0.97,
+    boxShadow: "0px -2px 1px #821717", // Inner shadow setting
+    backgroundColor: "#f7f7f8",
+    scale: 0.99,
     transformOrigin: "center center",
   },
 };
@@ -39,6 +39,12 @@ const defaultTransition = {
   type: "tween",
   duration: 0.1,
   ease: "easeInOut",
+
+  boxShadow: {
+    type: "tween",
+    duration: 0.1,
+    ease: "easeInOut",
+  },
 };
 
 // Type declarations

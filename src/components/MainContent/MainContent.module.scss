@@ -1,0 +1,56 @@
+.contentGrid {
+  display: grid;
+  // Full size relative to parent div height given in <App>
+  height: 100%;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 20% 60% 20%;
+}
+
+.content {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 192px 128px 192px 128px;
+  border-radius: 16px;
+  background-color: #d04949;
+  gap: 24px;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  color: #f7f7f8;
+}
+
+.h1 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 0.8em;
+}
+
+h2 {
+  font-family: "Krub", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 1.5em;
+
+}
+
+.buttonStyle {
+  font-family: "Krub", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  align-self: end;
+  margin-top: 8px; // Extra margin to ungroup visually from h1 & h2
+  padding: 12px 24px 12px 24px;
+  cursor: pointer;
+  color: #f45858;
+  border: none;
+  border-radius: 6px;
+  background-color: #ef6767;
+}
