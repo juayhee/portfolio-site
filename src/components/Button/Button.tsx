@@ -1,4 +1,4 @@
-import { motion, MotionStyle } from "framer-motion";
+import { motion } from "framer-motion";
 import styles from "./Button.module.scss";
 import React from "react";
 
@@ -45,14 +45,6 @@ const defaultTransition = {
     duration: 0.1,
     ease: "easeInOut",
   },
-};
-
-// Type declarations
-type ButtonProps = {
-  buttonText: string;
-  buttonStyle: string;
-  buttonColorType: "red" | "light";
-  buttonType?: "button" | "submit" | "reset";
 };
 
 function Button({

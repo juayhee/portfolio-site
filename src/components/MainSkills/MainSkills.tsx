@@ -17,13 +17,6 @@ import musicLogo from "../../resources/MainSkills_icons/music.svg";
 import photoshopLogo from "../../resources/MainSkills_icons/photoshop.svg";
 import premiereLogo from "../../resources/MainSkills_icons/premiere_pro.svg";
 
-type BubbleProps = {
-  title: string;
-  className: string;
-  skillsList: string[];
-  skillsIconList: string[];
-};
-
 // Content
 const frontEnd: BubbleProps = {
   title: "Frontend",

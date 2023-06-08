@@ -3,11 +3,6 @@ import styles from "./Header.module.scss";
 import linkedInLogo from "../../resources/linkedin.svg";
 import githubLogo from "../../resources/github.svg";
 
-type MenuItems = {
-  /* Variable number of page labels and their corresponding URLS */
-  [label: string]: string;
-};
-
 function Header(props: MenuItems): React.ReactElement {
   /* Separate labels:links key value pairs */
   const labelArray: string[] = [];
