@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./MainSkills.module.sass";
+import styles from "./MainSkills.module.scss";
 
 // Frontend logo imports
 import javaScriptLogo from "../../resources/MainSkills_icons/javascript.svg";
@@ -37,7 +37,7 @@ const backEnd: BubbleProps = {
   className: "backEnd",
   skillsList: ["Python", "Java", "C++"],
   skillsIconList: [pythonLogo, javaLogo, cppLogo],
-}; 
+};
 
 const more: BubbleProps = {
   title: "...and more",

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Header.module.sass";
+import styles from "./Header.module.scss";
 import linkedInLogo from "../../resources/linkedin.svg";
 import githubLogo from "../../resources/github.svg";
 

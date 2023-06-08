@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Title.module.sass";
+import styles from "./Title.module.scss";
 
 function Title(): React.ReactElement {
   return (
