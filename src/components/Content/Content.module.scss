@@ -1,0 +1,39 @@
+.contentGrid {
+  display: grid;
+  // Full size relative to parent div height given in <App>
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 20% 60% 20%;
+  height: 100%;
+}
+
+.content {
+  align-items: start;
+  background-color: #d04949;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  justify-content: center;
+  padding: 192px 128px 192px 128px;
+}
+
+.h1,
+h2 {
+  color: #f7f7f8;
+  margin: 0;
+  padding: 0;
+}
+
+.h1 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 48px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "Krub", sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+}
