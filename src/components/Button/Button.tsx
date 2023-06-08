@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
+import { motion, MotionStyle } from "framer-motion";
 import styles from "./Button.module.scss";
 import React from "react";
 
 // framer-motion variants
-const buttonVariants = {
+const buttonVariantsRed = {
   initial: {
     boxShadow: "1px 2px 2px rgba(0, 0, 0, 0.3)",
     backgroundColor: "#f45858",
@@ -19,6 +19,22 @@ const buttonVariants = {
   },
 };
 
+const buttonVariantsLight = {
+  initial: {
+    boxShadow: "1px 2px 2px rgba(0, 0, 0, 0.3)",
+    backgroundColor: "#ffffff",
+  },
+  hover: {
+    backgroundColor: "#ffffff",
+  },
+  tap: {
+    boxShadow: "inset 0px -2px 3px #f45858",
+    backgroundColor: "#ffffff",
+    scale: 0.97,
+    transformOrigin: "center center",
+  },
+};
+
 const defaultTransition = {
   type: "tween",
   duration: 0.1,
@@ -28,15 +44,26 @@ const defaultTransition = {
 // Type declarations
 type ButtonProps = {
   buttonText: string;
+  buttonStyle: string;
+  buttonColorType: "red" | "light";
   buttonType?: "button" | "submit" | "reset";
 };
 
-function Button({ buttonText, buttonType }: ButtonProps): React.ReactElement {
+function Button({
+  buttonText,
+  buttonType,
+  buttonStyle,
+  buttonColorType,
+}: ButtonProps): React.ReactElement {
   return (
     <motion.button
+      // HTML/CSS props
       type={buttonType}
-      className={styles.submitButton}
-      variants={buttonVariants}
+      className={buttonStyle}
+      // Motion props
+      variants={
+        buttonColorType === "red" ? buttonVariantsRed : buttonVariantsLight
+      }
       initial="initial"
       whileHover="hover"
       whileTap="tap"
