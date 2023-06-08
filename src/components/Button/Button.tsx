@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import styles from "./Button.module.scss";
 import React from "react";
 
+// framer-motion variants
 const buttonVariants = {
   initial: {
     boxShadow: "1px 2px 2px rgba(0, 0, 0, 0.3)",
@@ -24,10 +25,16 @@ const defaultTransition = {
   ease: "easeInOut",
 };
 
-function Button(): React.ReactElement {
+// Type declarations
+type ButtonProps = {
+  buttonText: string;
+  buttonType?: "button" | "submit" | "reset";
+};
+
+function Button({ buttonText, buttonType }: ButtonProps): React.ReactElement {
   return (
     <motion.button
-      type="submit"
+      type={buttonType}
       className={styles.submitButton}
       variants={buttonVariants}
       initial="initial"
@@ -35,7 +42,7 @@ function Button(): React.ReactElement {
       whileTap="tap"
       transition={defaultTransition}
     >
-      Submit
+      {buttonText}
     </motion.button>
   );
 }
