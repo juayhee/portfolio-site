@@ -1,0 +1,29 @@
+.galleryFrameContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  border: 1px solid red;
+
+  background-color: gray;
+
+}
+
+.dummyFrame {
+  width: 500px;
+  height: 1000px;
+}
+
+#one {
+  flex-shrink: 0;
+  background-color: red;
+}
+
+#two {
+  background-color: green;
+}
+
+#three {
+  background-color: blue;
+}

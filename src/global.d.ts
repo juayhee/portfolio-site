@@ -16,3 +16,7 @@ type BubbleProps = {
   skillsList: string[];
   skillsIconList: string[];
 };
+
+type GalleryFrameProps = {
+  imagePath: string;
+};
