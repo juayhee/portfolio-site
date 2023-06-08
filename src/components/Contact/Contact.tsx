@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.scss";
-import { motion } from "framer-motion";
+import Button from "../Button/Button.tsx";
 
 function Contact(): React.ReactElement {
   return (
@@ -36,28 +36,7 @@ function Contact(): React.ReactElement {
               id="message"
               placeholder="Feel free to message me about anything"
             />
-            <motion.button
-              type="submit"
-              className={styles.submitButton}
-              initial={{
-                boxShadow: "1px 2px 2px rgba(0, 0, 0, 0.3)",
-                x: 0,
-                y: 0,
-                backgroundColor: "#f45858",
-              }}
-              whileHover={{
-                backgroundColor: "#ef6767",
-              }}
-              whileTap={{
-                boxShadow: "inset 0px -2px 3px #f45858",
-                backgroundColor: "#d04949",
-                scale: 0.97,
-                transformOrigin: "center center",
-              }}
-              transition={{ type: "tween", duration: 0.05, ease: "easeInOut" }}
-            >
-              Submit
-            </motion.button>
+            <Button />
           </div>
         </form>
       </div>
