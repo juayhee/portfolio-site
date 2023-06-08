@@ -1,10 +1,8 @@
-// Background of form
 .contactForm {
   background: #22282e;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-
 
   gap: 24px;
   padding: 32px 64px 48px 48px;
@@ -18,16 +16,13 @@
 }
 
 .email input, .name input, .textAreaContainer textarea {
-  // Padding before input to prevent it from clipping rounded edge of input box
   border: 1px solid white;
   border-radius: 12px;
   box-shadow: 0px 0px 0px 0px rgb(0, 0, 0, 0.2);
-  // Border matches colour of text area before :focus to maintain dimension of text box
   box-sizing: border-box;
   font-family: "Krub", sans-serif;
   font-size: 16px;
 
-  // Input font
   padding: 0 0 0 16px;
   transition: border 0.3s, box-shadow 0.3s;
 }
@@ -53,18 +48,14 @@
 
 .textAreaContainer {
   display: flex;
-  // Let button position relative to .textAreaContainer
 
-  // Set height of container to equal the text area's defined size -- otherwise it would jut out by a few px
   flex-direction: column;
   position: relative;
 }
 
 .h1 {
   color: #f7f7f8;
-  // Align header with form below
   font-family: "Source Sans 3", sans-serif;
-  // Spacing between header and form
   font-size: 24px;
   font-weight: 500;
   margin: 0;
@@ -75,21 +66,22 @@
 input:focus, textarea:focus {
   border: 1px solid #b82e2e;
 
-  // Transition settings
   box-shadow: 0px 4px 12px 0px rgb(0, 0, 0, 0.2);
   outline: none;
   transition: border 0.3s, box-shadow 0.3s;
 }
 
+.space {
+  flex-grow: 1;
+}
+
 .submitButton {
-  // Set position to bottom right, relative to .textAreaContainer (with 12px spacing from edge)
   background-color: transparent;
   border: 1px solid black;
   border-radius: 12px;
 
-  // Visual style
   bottom: 12px;
-  cursor: grab;
+  cursor: pointer;
   font-size: 12px;
   padding: 8px 12px 8px 12px;
   position: absolute;
