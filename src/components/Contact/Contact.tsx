@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.scss";
-import Button from "../Button/Button.tsx";
+import Button from "../util/Button/Button.tsx";
 
 function Contact(): React.ReactElement {
   return (

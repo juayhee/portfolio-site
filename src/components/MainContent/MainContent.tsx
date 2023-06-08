@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./MainContent.module.scss";
-import Button from "../Button/Button.tsx";
+import Button from "../util/Button/Button.tsx";
 
 // Is a flex component requiring strict dimension settings in parent
 
