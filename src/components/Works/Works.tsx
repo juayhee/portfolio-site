@@ -1,8 +1,14 @@
 import React from "react";
-import styles from "./Template.module.scss";
+import styles from "./Works.module.scss";
+
+import Gallery from "../Gallery/Gallery.tsx";
 
 function Works(): React.ReactElement {
-  return <>placeholder</>;
+  return (
+    <>
+      <Gallery />
+    </>
+  );
 }
 
 export default Works;
