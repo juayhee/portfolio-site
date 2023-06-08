@@ -1,0 +1,25 @@
+.headerContainer {
+  background-color: #343f4c;
+  display: flex;
+  gap: 48px;
+  height: 48px;
+  padding: 12px 30px 12px 30px;
+}
+
+.links {
+  align-items: center;
+  display: flex;
+  gap: 48px;
+}
+
+.links > a {
+  color: #f7f7f8;
+  flex-grow: 0;
+  font-family: Krub, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.space {
+  flex-grow: 1;
+}

@@ -1,0 +1,21 @@
+@use '../../styles/fonts.scss' as *;
+
+.titleContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  @each $property, $value in $title-font {
+    #{$property}: $value;
+    font-size: 120px;
+  }
+}
+
+.description {
+  @each $property, $value in $body-font {
+    #{$property}: $value;
+    font-size: 48px;
+  }
+}
