@@ -6,8 +6,9 @@ function GalleryFrame({ imagePath }: GalleryFrameProps): React.ReactElement {
   return (
     <>
       <motion.div
+        key={Math.random()} // TODO: Replace with proper key generation
         className={styles.galleryFrameContainer}
-        initial={{ x: "-100vw" }}
+        initial={{ x: "-200vw" }}
         animate={{ x: 0 }}
       >
         {imagePath}
