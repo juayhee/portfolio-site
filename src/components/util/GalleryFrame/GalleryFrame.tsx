@@ -1,18 +1,31 @@
 import React from "react";
 import styles from "./GalleryFrame.module.scss";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
-function GalleryFrame({ imagePath }: GalleryFrameProps): React.ReactElement {
+const frameVariants = {
+  fromLeft: { x: "-100vw" },
+  fromRight: { x: "100vw" },
+};
+
+function GalleryFrame({
+  imagePath,
+  clickDirection,
+}: GalleryFrameProps): React.ReactElement {
   return (
     <>
-      <motion.div
-        key={Math.random()} // TODO: Replace with proper key generation
-        className={styles.galleryFrameContainer}
-        initial={{ x: "-200vw" }}
-        animate={{ x: 0 }}
-      >
-        {imagePath}
-      </motion.div>
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={Math.random()} // TODO: Replace with proper key generation
+          className={styles.galleryFrameContainer}
+          variants={frameVariants}
+          initial={clickDirection === "left" ? "fromLeft" : "fromRight"} // Entry direction
+          animate={{ x: 0 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.1 }}
+        >
+          {imagePath}
+        </motion.div>
+      </AnimatePresence>
     </>
   );
 }

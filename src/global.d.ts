@@ -19,4 +19,5 @@ type BubbleProps = {
 
 type GalleryFrameProps = {
   imagePath: string;
+  clickDirection: "left" | "right";
 };
