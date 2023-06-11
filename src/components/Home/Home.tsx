@@ -1,20 +1,20 @@
 import React from "react";
 import Title from "../Title/Title.js";
 import Header from "../Header/Header.js";
-import styles from "./App.module.scss";
+import styles from "./Home.module.scss";
 import MainSkills from "../MainSkills/MainSkills.js";
 import Contact from "../Contact/Contact.js";
 import MainContent from "../MainContent/MainContent.tsx";
 import Button from "../util/Button/Button.tsx";
 
 const headerProps = {
-  Home: "#",
-  About: "#",
-  Skills: "#",
-  Works: "#",
-  Contact: "#",
+  Home: "/home",
+  About: "/about",
+  Skills: "/skills",
+  Works: "/works",
+  Contact: "/contact",
 };
-const App = (): React.ReactElement => {
+const Home = (): React.ReactElement => {
   return (
     <>
       <div className={styles.headerContainer}>
@@ -38,4 +38,4 @@ const App = (): React.ReactElement => {
   );
 };
 
-export default App;
+export default Home;
