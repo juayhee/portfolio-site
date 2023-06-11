@@ -7,9 +7,9 @@
 }
 
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 li {
@@ -30,26 +30,26 @@ li {
 }
 
 .bubbleContent > ul > li {
-  align-items: center;
   display: flex;
+  align-items: center;
   gap: 12px;
 }
 
 .bubbleContainer {
-  background-color: #d04949;
-  border-radius: 32px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 32px 24px 32px 24px;
   width: max-content;
+  padding: 32px 24px 32px 24px;
+  border-radius: 32px;
+  background-color: #d04949;
+  gap: 24px;
 }
 
 .bubblesContainer {
   display: flex;
-  gap: 128px;
   justify-content: center;
   min-height: 80vh; // Controls height of column in which bubbles are allowed to align themselves;
+  gap: 128px;
 }
 
 // Vertical alignment of bubbles within their parent flex containers
@@ -63,4 +63,24 @@ li {
 
 .more {
   align-self: end;
+}
+
+.buttonStyle {
+  font-family: "Krub", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 12px 16px 12px 16px;
+  cursor: pointer;
+  transform: translate(-60%, -50%);
+  color: #f7f7f8;
+  border: none;
+  border-radius: 6px;
+  // background-color is defined in variants
+}
+
+.skillsContainer {
+  position: relative;
 }

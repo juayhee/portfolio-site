@@ -16,6 +16,7 @@ import cppLogo from "../../resources/MainSkills_icons/cpp.svg";
 import musicLogo from "../../resources/MainSkills_icons/music.svg";
 import photoshopLogo from "../../resources/MainSkills_icons/photoshop.svg";
 import premiereLogo from "../../resources/MainSkills_icons/premiere_pro.svg";
+import Button from "../util/Button/Button.tsx";
 
 // Content
 const frontEnd: BubbleProps = {
@@ -65,10 +66,17 @@ function Bubble(props: BubbleProps): React.ReactElement {
 function MainSkills(): React.ReactElement {
   return (
     <>
-      <div className={styles.bubblesContainer}>
-        <Bubble {...frontEnd} />
-        <Bubble {...backEnd} />
-        <Bubble {...more} />
+      <div className={styles.skillsContainer}>
+        <Button
+          buttonText="Learn more"
+          buttonStyle={styles.buttonStyle}
+          buttonColorType="red"
+        />
+        <div className={styles.bubblesContainer}>
+          <Bubble {...frontEnd} />
+          <Bubble {...backEnd} />
+          <Bubble {...more} />
+        </div>
       </div>
     </>
   );

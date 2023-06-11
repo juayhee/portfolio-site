@@ -5,6 +5,7 @@ import styles from "./App.module.scss";
 import MainSkills from "../MainSkills/MainSkills.js";
 import Contact from "../Contact/Contact.js";
 import MainContent from "../MainContent/MainContent.tsx";
+import Button from "../util/Button/Button.tsx";
 
 const headerProps = {
   Home: "#",
