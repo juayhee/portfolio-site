@@ -7,27 +7,39 @@ import About from "./routes/About/About.tsx";
 import Skills from "./routes/Skills/Skills.tsx";
 import Works from "./routes/Works/Works.tsx";
 import Contact from "./routes/Contact/Contact.tsx";
+import Root from "./routes/Root/Root.tsx";
+import Gallery from "./components/util/Gallery/Gallery.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-  },
-  {
-    path: "about",
-    element: <About />,
-  },
-  {
-    path: "skills",
-    element: <Skills />,
-  },
-  {
-    path: "works",
-    element: <Works />,
-  },
-  {
-    path: "contact",
-    element: <Contact />,
+    element: <Root />,
+    children: [
+      {
+        path: "",
+        element: <Home />,
+      },
+      {
+        path: "about",
+        element: <About />,
+      },
+      {
+        path: "skills",
+        element: <Skills />,
+      },
+      {
+        path: "works",
+        element: <Works />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "dev",
+        element: <Gallery />,
+      },
+    ],
   },
 ]);
 

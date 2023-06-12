@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Header.module.scss";
-import linkedInLogo from "../../resources/linkedin.svg";
-import githubLogo from "../../resources/github.svg";
+import linkedInLogo from "../../resources/Header_icons/linkedin.svg";
+import githubLogo from "../../resources/Header_icons/github.svg";
 
 function Header(props: MenuItems): React.ReactElement {
   /* Separate labels:links key value pairs */
