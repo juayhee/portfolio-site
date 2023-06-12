@@ -38,11 +38,17 @@ function Gallery(): React.ReactElement {
     <>
       <div className={styles.galleryContainer}>
         <button className={styles.leftButton} onClick={handleLeftButtonClick}>
-          LEFT
+          <img
+            src="/src/resources/Gallery_icons/left_arrow.svg"
+            alt="go left"
+          />
         </button>
         <div className={styles.gallery}>{imgs[currentFrame]}</div>
         <button className={styles.rightButton} onClick={handleRightButtonClick}>
-          RIGHT
+          <img
+            src="/src/resources/Gallery_icons/right_arrow.svg"
+            alt="go right"
+          />
         </button>
       </div>
     </>

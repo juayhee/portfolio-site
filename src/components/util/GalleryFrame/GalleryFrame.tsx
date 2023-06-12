@@ -20,7 +20,7 @@ function GalleryFrame({
           variants={frameVariants}
           initial={clickDirection === "left" ? "fromLeft" : "fromRight"} // Entry direction
           animate={{ x: 0 }}
-          exit={{ opacity: 0 }}
+          exit={clickDirection === "left" ? "fromRight" : "fromLeft"} // Exit direction
           transition={{ duration: 0.1 }}
         >
           {imagePath}
