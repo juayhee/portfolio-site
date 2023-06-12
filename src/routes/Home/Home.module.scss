@@ -1,19 +1,10 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.headerContainer {
-  position: absolute;
-  width: 100vw;
-}
 
 .titleContainer {
-  align-items: center;
   display: flex;
-  height: 80vh;
+  align-items: center;
   justify-content: center;
   width: 100vw;
+  height: 80vh;
 }
 
 .contentContainer {
@@ -21,27 +12,27 @@ body {
 }
 
 .skillsContainer {
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
 }
 
 .contactContainer { // Size of contact section
-  align-items: center;
-  background-color: #343f4c;
   display: flex;
+  align-items: center;
+  justify-content: center;
 
   // Centre component
-  justify-content: center;
-  padding-bottom: 128px;
   padding-top: 64px;
+  padding-bottom: 128px;
+  background-color: #343f4c;
 }
 
 .contentSkillsSpacing {
-  border: 1px solid black;
   height: 40vh;
+  border: 1px solid black;
 }
 
 .mainSkillsContactSpacing {
-  border: 1px solid black;
   height: 40vh;
+  border: 1px solid black;
 }

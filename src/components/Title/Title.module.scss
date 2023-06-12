@@ -1,21 +1,17 @@
-@use '../../styles/fonts.scss' as *;
-
 .titleContainer {
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
 .name {
-  @each $property, $value in $title-font {
-    #{$property}: $value;
-    font-size: 120px;
-  }
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 120px;
+  font-weight: normal;
 }
 
 .description {
-  @each $property, $value in $body-font {
-    #{$property}: $value;
-    font-size: 48px;
-  }
+  font-family: "Krub", sans-serif;
+  font-size: 48px;
+  font-weight: normal;
 }

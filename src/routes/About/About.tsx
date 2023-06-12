@@ -1,8 +1,11 @@
 import React from "react";
-import styles from "./Template.module.scss";
 
-function Template(): React.ReactElement {
-  return <>About</>;
+function About(): React.ReactElement {
+  return (
+    <>
+      <h1>About</h1>
+    </>
+  );
 }
 
-export default Template;
+export default About;

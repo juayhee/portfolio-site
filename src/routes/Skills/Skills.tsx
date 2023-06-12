@@ -1,8 +1,11 @@
 import React from "react";
-import styles from "./Skills.module.scss";
 
 function Skills(): React.ReactElement {
-  return <>Skills</>;
+  return (
+    <>
+      <h1>Skills</h1>
+    </>
+  );
 }
 
 export default Skills;
