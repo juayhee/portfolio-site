@@ -20,6 +20,7 @@ function MainContent(): React.ReactElement {
             culpa qui officia deserunt mollit anim id est laborum.
           </h2>
           <Button
+            buttonLink="/about"
             buttonText="Learn more"
             buttonStyle={styles.buttonStyle}
             buttonColorType="light"

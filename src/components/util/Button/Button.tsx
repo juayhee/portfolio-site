@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import styles from "./Button.module.scss";
 import React from "react";
 
-// framer-motion variants
+// framer motion variants
 const buttonVariantsRed = {
   initial: {
     boxShadow: "0px 2px 3px rgba(0, 0, 0, 0.3)",
@@ -45,17 +45,21 @@ const defaultTransition = {
   },
 };
 
+// End of framer motion variants
+
 function Button({
+  buttonLink,
   buttonText,
   buttonType,
   buttonStyle,
   buttonColorType,
 }: ButtonProps): React.ReactElement {
   return (
-    <motion.button
+    <motion.a
       // HTML/CSS props
       type={buttonType}
-      className={buttonStyle}
+      className={`${buttonStyle} ${styles.a}`}
+      href={buttonLink}
       // Motion props
       variants={
         buttonColorType === "red" ? buttonVariantsRed : buttonVariantsLight
@@ -66,7 +70,7 @@ function Button({
       transition={defaultTransition}
     >
       {buttonText}
-    </motion.button>
+    </motion.a>
   );
 }
 

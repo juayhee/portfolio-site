@@ -2,8 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "../index.scss";
-import Home from "./components/Home/Home.tsx";
-import Gallery from "./components/util/Gallery/Gallery.tsx";
+import Home from "./routes/Home/Home.tsx";
+import About from "./routes/About/About.tsx";
+import Skills from "./routes/Skills/Skills.tsx";
+import Works from "./routes/Works/Works.tsx";
+import Contact from "./routes/Contact/Contact.tsx";
 
 const router = createBrowserRouter([
   {
@@ -12,19 +15,19 @@ const router = createBrowserRouter([
   },
   {
     path: "about",
-    element: <div>About</div>,
+    element: <About />,
   },
   {
     path: "skills",
-    element: <div>Skills</div>,
+    element: <Skills />,
   },
   {
     path: "works",
-    element: <div>Works</div>,
+    element: <Works />,
   },
   {
     path: "contact",
-    element: <div>Contact</div>,
+    element: <Contact />,
   },
 ]);
 

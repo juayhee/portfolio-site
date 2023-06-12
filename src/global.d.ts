@@ -1,4 +1,5 @@
 type ButtonProps = {
+  buttonLink: string; // "/url style string"
   buttonText: string;
   buttonStyle: string;
   buttonColorType: "red" | "light";

@@ -68,6 +68,7 @@ function MainSkills(): React.ReactElement {
     <>
       <div className={styles.skillsContainer}>
         <Button
+          buttonLink="/skills"
           buttonText="Learn more"
           buttonStyle={styles.buttonStyle}
           buttonColorType="red"

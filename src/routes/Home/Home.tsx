@@ -1,14 +1,13 @@
 import React from "react";
-import Title from "../Title/Title.js";
-import Header from "../Header/Header.js";
+import Title from "../../components/Title/Title.tsx";
+import Header from "../../components/Header/Header.tsx";
 import styles from "./Home.module.scss";
-import MainSkills from "../MainSkills/MainSkills.js";
-import Contact from "../Contact/Contact.js";
-import MainContent from "../MainContent/MainContent.tsx";
-import Button from "../util/Button/Button.tsx";
+import MainSkills from "../../components/MainSkills/MainSkills.tsx";
+import Contact from "../../components/Contact/Contact.tsx";
+import MainContent from "../../components/MainContent/MainContent.tsx";
 
 const headerProps = {
-  Home: "/home",
+  Home: "/",
   About: "/about",
   Skills: "/skills",
   Works: "/works",
