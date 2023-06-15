@@ -1,29 +1,60 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./GalleryFrame.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 
-const frameVariants = {
-  fromLeft: { x: "-100vw" },
-  fromRight: { x: "100vw" },
-};
+import image1 from "./sample_images/image1.jpg";
+import image2 from "./sample_images/image2.jpg";
+import image3 from "./sample_images/image3.jpg";
+import { Simulate } from "react-dom/test-utils";
+import click = Simulate.click;
+
+const images: string[] = [image1, image2, image3]; // URL of images
 
 function GalleryFrame({
-  imagePath,
+  newFrameIndex,
   clickDirection,
 }: GalleryFrameProps): React.ReactElement {
+  console.log("Frame: ", newFrameIndex);
+  useEffect(() => {
+    console.log("Updated component");
+  }, [clickDirection]);
+
+  const frameVariants = {
+    centre: {
+      x: 0,
+      opacity: 1,
+    },
+
+    // Determining direction of entry of frame based on latest click direction state
+    enter: (custom: string | null) => {
+      return {
+        x: custom === "next" ? "-100%" : "100%",
+        opacity: 0,
+      };
+    },
+
+    // Determining direction of exit of frame based on latest click direction state
+    exit: (custom: string | null) => {
+      return {
+        x: custom === "next" ? "100%" : "-100%",
+        opacity: 0,
+      };
+    },
+  };
+
   return (
     <>
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="wait" custom={clickDirection}>
         <motion.div
-          key={Math.random()} // TODO: Replace with proper key generation
+          key={newFrameIndex}
           className={styles.galleryFrameContainer}
           variants={frameVariants}
-          initial={clickDirection === "left" ? "fromLeft" : "fromRight"} // Entry direction
-          animate={{ x: 0 }}
-          exit={clickDirection === "left" ? "fromRight" : "fromLeft"} // Exit direction
-          transition={{ duration: 0.1 }}
+          initial="enter"
+          animate="centre"
+          exit="exit"
+          custom={clickDirection}
         >
-          {imagePath}
+          <img src={images[newFrameIndex]} alt="img" className={styles.img} />
         </motion.div>
       </AnimatePresence>
     </>

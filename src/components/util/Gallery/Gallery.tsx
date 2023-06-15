@@ -1,53 +1,44 @@
 import React, { useState } from "react";
 import styles from "./Gallery.module.scss";
 import GalleryFrame from "../GalleryFrame/GalleryFrame.tsx";
+import { Simulate } from "react-dom/test-utils";
+import click = Simulate.click;
 
 function Gallery(): React.ReactElement {
-  const [currentFrame, setFrame] = useState(0);
+  const [newFrameIndex, setNewFrameIndex] = useState(0);
+  const [clickDirection, setClickDirection] = useState<string | null>(null);
 
-  const [clickDirection, setClickDirection] = useState<"left" | "right">(
-    "left"
-  ); // Arbitrary starting value of "left"
-
-  const imgs: React.ReactElement[] = [
-    <GalleryFrame
-      imagePath="IMAGE 1"
-      clickDirection={clickDirection}
-    ></GalleryFrame>,
-    <GalleryFrame
-      imagePath="IMAGE 2"
-      clickDirection={clickDirection}
-    ></GalleryFrame>,
-    <GalleryFrame
-      imagePath="IMAGE 3"
-      clickDirection={clickDirection}
-    ></GalleryFrame>,
-  ];
-
-  function handleLeftButtonClick() {
-    setFrame(currentFrame - 1);
-    setClickDirection("left");
+  function handlePrevButtonClick() {
+    setNewFrameIndex(newFrameIndex - 1);
+    setClickDirection("prev");
   }
 
-  function handleRightButtonClick() {
-    setFrame(currentFrame + 1);
-    setClickDirection("right");
+  function handleNextButtonClick() {
+    setNewFrameIndex(newFrameIndex + 1);
+    setClickDirection("next");
   }
 
   return (
     <>
       <div className={styles.galleryContainer}>
-        <button className={styles.button} onClick={handleLeftButtonClick}>
+        <button className={styles.button} onClick={handlePrevButtonClick}>
           <img
-            src="/src/resources/Gallery_icons/left_arrow.svg"
-            alt="go left"
+            src="/src/components/util/Gallery/icons/left_arrow.svg"
+            alt="previous"
           />
         </button>
-        <div className={styles.gallery}>{imgs[currentFrame]}</div>
-        <button className={styles.button} onClick={handleRightButtonClick}>
+        <div className={styles.gallery}>
+          {
+            <GalleryFrame
+              newFrameIndex={newFrameIndex}
+              clickDirection={clickDirection}
+            />
+          }
+        </div>
+        <button className={styles.button} onClick={handleNextButtonClick}>
           <img
-            src="/src/resources/Gallery_icons/right_arrow.svg"
-            alt="go right"
+            src="/src/components/util/Gallery/icons/right_arrow.svg"
+            alt="next"
           />
         </button>
       </div>
