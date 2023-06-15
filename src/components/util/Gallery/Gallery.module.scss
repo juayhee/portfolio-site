@@ -5,12 +5,24 @@
 
   justify-content: center;
 
-  width: 1000px;
-  height: 1000px;
-
+  // Fixed aperture of Gallery through which a GalleryFrame is displayed
+  width: 768px;
   border: 1px solid black;
+
+  aspect-ratio: 16/9;
 }
 
 .galleryContainer {
   display: flex;
+  gap: 16px; // Space between buttons and GalleryFrame
+}
+
+.button {
+  align-self: center;
+  margin: 0;
+  padding: 0;
+
+  // Remove natural padding on button
+  border: none;
+  background: none;
 }
