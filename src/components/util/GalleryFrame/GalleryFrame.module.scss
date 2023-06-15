@@ -1,12 +1,21 @@
 .galleryFrameContainer {
+  position: relative; // Acts as a base "stage" for other elements
+  display: flex;
   overflow: hidden;
-  width: 768px;
+  width: clamp(1280px, 1280px, 1280px);
+
   border: 1px solid red;
+
   background-color: gray;
+  aspect-ratio: 16/9;
+
 }
 
 .img {
-
-
+  // Centers the image vertically and horizontally inside .galleryFrameContainer
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 

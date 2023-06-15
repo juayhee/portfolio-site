@@ -14,11 +14,6 @@ function GalleryFrame({
   newFrameIndex,
   clickDirection,
 }: GalleryFrameProps): React.ReactElement {
-  console.log("Frame: ", newFrameIndex);
-  useEffect(() => {
-    console.log("Updated component");
-  }, [clickDirection]);
-
   const frameVariants = {
     centre: {
       x: 0,
