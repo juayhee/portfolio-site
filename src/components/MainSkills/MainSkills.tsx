@@ -2,20 +2,20 @@ import React from "react";
 import styles from "./MainSkills.module.scss";
 
 // Frontend logo imports
-import javaScriptLogo from "../../resources/MainSkills_icons/javascript.svg";
-import typeScriptLogo from "../../resources/MainSkills_icons/typescript.svg";
-import cssLogo from "../../resources/MainSkills_icons/css.svg";
-import htmlLogo from "../../resources/MainSkills_icons/html.svg";
+import javaScriptLogo from "./icons/javascript.svg";
+import typeScriptLogo from "./icons/typescript.svg";
+import cssLogo from "./icons/css.svg";
+import htmlLogo from "./icons/html.svg";
 
 // Backend logo imports
-import pythonLogo from "../../resources/MainSkills_icons/python.svg";
-import javaLogo from "../../resources/MainSkills_icons/java.svg";
-import cppLogo from "../../resources/MainSkills_icons/cpp.svg";
+import pythonLogo from "./icons/python.svg";
+import javaLogo from "./icons/java.svg";
+import cppLogo from "./icons/cpp.svg";
 
 // More logo imports
-import musicLogo from "../../resources/MainSkills_icons/music.svg";
-import photoshopLogo from "../../resources/MainSkills_icons/photoshop.svg";
-import premiereLogo from "../../resources/MainSkills_icons/premiere_pro.svg";
+import musicLogo from "./icons/music.svg";
+import photoshopLogo from "./icons/photoshop.svg";
+import premiereLogo from "./icons/premiere_pro.svg";
 import Button from "../util/Button/Button.tsx";
 
 // Content

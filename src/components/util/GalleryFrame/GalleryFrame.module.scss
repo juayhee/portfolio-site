@@ -1,23 +1,12 @@
 .galleryFrameContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  min-width: 500px;
-  min-height: 500px;
+  overflow: hidden;
+  width: 768px;
   border: 1px solid red;
   background-color: gray;
 }
 
-#one {
-  flex-shrink: 0;
-  background-color: red;
+.img {
+
+
 }
 
-#two {
-  background-color: green;
-}
-
-#three {
-  background-color: blue;
-}

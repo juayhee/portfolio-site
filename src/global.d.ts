@@ -19,6 +19,6 @@ type BubbleProps = {
 };
 
 type GalleryFrameProps = {
-  imagePath: string;
-  clickDirection: "left" | "right";
+  newFrameIndex: number;
+  clickDirection: string | null;
 };
