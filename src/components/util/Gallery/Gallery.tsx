@@ -13,13 +13,23 @@ function Gallery(): React.ReactElement {
   const [clickDirection, setClickDirection] = useState<string | null>(null);
 
   function handlePrevButtonClick() {
-    setNewFrameIndex(newFrameIndex - 1);
-    setClickDirection("prev");
+    if (newFrameIndex - 1 < 0) {
+      // Check if frame index is out of lower bound
+      //pass
+    } else {
+      setNewFrameIndex(newFrameIndex - 1);
+      setClickDirection("prev");
+    }
   }
 
   function handleNextButtonClick() {
-    setNewFrameIndex(newFrameIndex + 1);
-    setClickDirection("next");
+    if (newFrameIndex + 1 > images.length - 1) {
+      // Check if frame index is out of upper bound
+      //pass
+    } else {
+      setNewFrameIndex(newFrameIndex + 1);
+      setClickDirection("next");
+    }
   }
 
   return (
