@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import styles from "./GalleryFrame.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -32,7 +31,7 @@ function GalleryFrame({
 
   return (
     <>
-      <AnimatePresence mode="wait" custom={clickDirection}>
+      <AnimatePresence mode="popLayout" custom={clickDirection}>
         <motion.div
           key={newFrameIndex}
           className={styles.galleryFrameContainer}
