@@ -1,18 +1,10 @@
-import React, { useEffect, useState } from "react";
 import styles from "./GalleryFrame.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
-
-import image1 from "./sample_images/image1.jpg";
-import image2 from "./sample_images/image2.jpg";
-import image3 from "./sample_images/image3.jpg";
-import { Simulate } from "react-dom/test-utils";
-import click = Simulate.click;
-
-const images: string[] = [image1, image2, image3]; // URL of images
 
 function GalleryFrame({
   newFrameIndex,
   clickDirection,
+  images,
 }: GalleryFrameProps): React.ReactElement {
   const frameVariants = {
     centre: {

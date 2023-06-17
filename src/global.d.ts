@@ -21,4 +21,5 @@ type BubbleProps = {
 type GalleryFrameProps = {
   newFrameIndex: number;
   clickDirection: string | null;
+  images: string[];
 };
