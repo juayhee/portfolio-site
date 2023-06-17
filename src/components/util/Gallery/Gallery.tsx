@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import styles from "./Gallery.module.scss";
 import GalleryFrame from "../GalleryFrame/GalleryFrame.tsx";
 
+import image1 from "./sample_images/image1.jpg";
+import image2 from "./sample_images/image2.jpg";
+import image3 from "./sample_images/image3.jpg";
+
+const images: string[] = [image1, image2, image3]; // URL of images
+
 function Gallery(): React.ReactElement {
   const [newFrameIndex, setNewFrameIndex] = useState(0);
   const [clickDirection, setClickDirection] = useState<string | null>(null);
@@ -30,6 +36,7 @@ function Gallery(): React.ReactElement {
             <GalleryFrame
               newFrameIndex={newFrameIndex}
               clickDirection={clickDirection}
+              images={images}
             />
           }
         </div>
