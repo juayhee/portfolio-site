@@ -7,16 +7,16 @@
   height: 80vh;
 }
 
-.contentContainer {
+.homeContentContainer {
   height: 100vh;
 }
 
-.skillsContainer {
+.homeSkillsContainer {
   width: 100vw;
   height: 100vh;
 }
 
-.contactContainer { // Size of contact section
+.homeContactContainer { // Size of contact section
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,12 +27,23 @@
   background-color: #343f4c;
 }
 
-.contentSkillsSpacing {
+.homeContentSkillsSpacing {
   height: 40vh;
   border: 1px solid black;
 }
 
-.mainSkillsContactSpacing {
+.homeSkillsContactSpacing {
   height: 40vh;
   border: 1px solid black;
+}
+
+.homeWorksContactSpacing {
+  height: 40vh;
+  border: 1px solid black;
+}
+
+.homeWorksContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
