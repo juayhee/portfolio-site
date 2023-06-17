@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./MainSkills.module.scss";
+import styles from "./HomeSkills.module.scss";
 
 // Frontend logo imports
 import javaScriptLogo from "./icons/javascript.svg";
@@ -63,7 +63,7 @@ function Bubble(props: BubbleProps): React.ReactElement {
   );
 }
 
-function MainSkills(): React.ReactElement {
+function HomeSkills(): React.ReactElement {
   return (
     <>
       <div className={styles.skillsContainer}>
@@ -83,4 +83,4 @@ function MainSkills(): React.ReactElement {
   );
 }
 
-export default MainSkills;
+export default HomeSkills;

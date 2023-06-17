@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./MainContent.module.scss";
+import styles from "./HomeContent.module.scss";
 import Button from "../util/Button/Button.tsx";
 
 // Is a flex component requiring strict dimension settings in parent
 
-function MainContent(): React.ReactElement {
+function HomeContent(): React.ReactElement {
   return (
     <>
       <div className={styles.contentGrid}>
@@ -31,4 +31,4 @@ function MainContent(): React.ReactElement {
   );
 }
 
-export default MainContent;
+export default HomeContent;

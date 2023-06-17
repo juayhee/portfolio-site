@@ -1,9 +1,9 @@
 import React from "react";
 import Title from "../../components/Title/Title.tsx";
 import styles from "./Home.module.scss";
-import MainSkills from "../../components/MainSkills/MainSkills.tsx";
+import HomeSkills from "../../components/HomeSkills/HomeSkills.tsx";
 import Contact from "../../components/Contact/Contact.tsx";
-import MainContent from "../../components/MainContent/MainContent.tsx";
+import HomeContent from "../../components/HomeContent/HomeContent.tsx";
 import HomeWorks from "../../components/HomeWorks/HomeWorks.tsx";
 
 const Home = (): React.ReactElement => {
@@ -13,11 +13,11 @@ const Home = (): React.ReactElement => {
         <Title />
       </div>
       <div className={styles.homeContentContainer}>
-        <MainContent />
+        <HomeContent />
       </div>
       <div className={styles.homeContentSkillsSpacing} />
       <div className={styles.homeSkillsContainer}>
-        <MainSkills />
+        <HomeSkills />
       </div>
       <div className={styles.homeSkillsContactSpacing} />
       <div className={styles.homeWorksContainer}>
