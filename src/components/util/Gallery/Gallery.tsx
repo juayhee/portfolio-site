@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import styles from "./Gallery.module.scss";
 import GalleryFrame from "../GalleryFrame/GalleryFrame.tsx";
-import { Simulate } from "react-dom/test-utils";
-import click = Simulate.click;
 
 function Gallery(): React.ReactElement {
   const [newFrameIndex, setNewFrameIndex] = useState(0);
